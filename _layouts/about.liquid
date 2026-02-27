@@ -56,6 +56,17 @@ layout: default
       {% include latest_posts.liquid %}
     {% endif %}
 
+     <!-- Academic Service -->
+     {% if page.academic_service %}
+         <h2 style="margin-top: 30px;"> <!-- Added top margin to create space -->
+            <a href="{{ '/blog/' | relative_url }}" style="color: inherit">academic service</a>
+          </h2>
+           <div class="academic_service">
+              <p> Reviewer for CVPR'24, ECCV'24, TPAMI, TNNLS, IJCV, CVIU, and TIM</p>
+           </div>
+     {%- endif %}
+
+
     <!-- Selected papers -->
     {% if page.selected_papers %}
       <h2>
